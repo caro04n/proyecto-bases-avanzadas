@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Bases de Datos Avanzadas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>🎟️ Gestor de Preventas</h2>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/cargar">F1: Cargar JSON</a></li>
+            <!-- Espacios para las funciones de tus compañeros -->
+            <li><a href="#">F2: Abrir Preventa</a></li>
+            <li><a href="#">F3: Preventas Vigentes</a></li>
+            <li><a href="#">F4: Obtener Entrada</a></li>
+            <li><a href="#">F5: Consultar Entradas</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
